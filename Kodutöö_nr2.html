@@ -12,7 +12,24 @@
             background-size: cover;
             color: antiquewhite;               
         }
+      .content{
+       margin-left: 150px;
+       margin-right: 150px;
+      }
+      .container{
+        max-width: 1200px;
+        margin: auto;        
+        background-color: antiquewhite;
         
+      }
+      .container-fluid{
+        margin-left: 90px;
+      }
+      .top-bar{
+        margin-left: 100px;
+    
+      
+      }
        .facebook-icon{
         color: black;
        }
@@ -23,16 +40,16 @@
     </style> 
 </head>
   <body>
-       
+       <div class="container">
        <div class="top-bar">
         
-        <div class="row justify-content-around">
+        <div class="row justify-content-center">
         <div class="col-4 text-center">
           <i class="far fa-envelope"></i> <span class="mr-3">sinu@nimi.ee</span>
           <i class="fas fa-headphones"></i> <span class="mr-3">+372 555 666</span>
             </div>
             
-            <div class="col-6 text-end">
+            <div class="col-5 text-end">
               <h6>
                 <span class="text-primary">Est</span>
                 <span class="text-dark">|</span>
@@ -42,7 +59,7 @@
               </h6>
               
             </div>
-            <div class="col-2">
+            <div class="col-3">
             <a href="#" class="mr-2 facebook-icon"><i class="fab fa-facebook-f"></i></a>
             <a href="#" class="twitter-icon"><i class="fab fa-twitter"></i></a>
             </div>
@@ -50,15 +67,15 @@
           
          
       
-      <div class="row justify-content-around">
-        <div class="col-md-4">
+      <div class="row justify-content-center">
+        <div class="col-md-5">
           
           <div class="logo">
             <h1><b>Leena Jaaniste</b></h1>
           </div>  
          
         </div>
-        <div class="col-md-5">
+        <div class="col-md-6">
          
             <div class="navbar">
             <div class="d-flex">
@@ -79,23 +96,23 @@
            </div>
         
         
-       <div class="container-fluid">
+       
         <div class="p-5 mb-4 bg-body-tertiary jumbo">
-            <div class="container"> 
+            <div class="container-fluid"> 
             <h2><b>Tõestan, et oskan</b></h2>
             <h2><b>Bootstrappi</b></h2>
             <p class="fs-6">Tegelikult oskan täiega HTML ja Bootstrap APit.</p>
             <p class="fs-6">Kahjuks olen liiga laisk!</p>
             </div>
         </div>
-
-        <div class="container-fluid">
+        <div class="container">
+        <div class="content">
           <div class="col-md-12 d-flex align-items-center justify-content-center">
             <h5 class="display-5">Meie teenused</h5>
             </div>
-          <div class="container py-4 px-3 mx-auto">
+          <div class="content py-4 px-3 mx-auto">
             <div class="row no-gutters">
-              <div class="col-sm-4 d-flex align-items-center justify-content-center">
+              <div class="col-md-4">
                 <div class="bg-primari text-black text-center">
                   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
                   <i class="fas fa-leaf" style="font-size:48px;color:blue"></i>
@@ -105,7 +122,7 @@
                   <a href="#" class="primary">Loe edasi</a>
               </div>
               </div>
-              <div class="col-sm-4">
+              <div class="col-md-4">
                 <div class="bg-primari text-black text-center">
                   <i class="fas fa-seedling" style="font-size:48px;color:red"></i>
                   <br>
@@ -114,7 +131,7 @@
                 <a href="#" class="primary">Loe edasi</a>  
                 </div>
               </div>
-              <div class="col-sm-4">
+              <div class="col-md-4">
                 <div class="bg-primari text-black text-center">
                   <i class="fas fa-leaf" style="font-size:48px;color:yellow"></i>
                   <br>
@@ -126,7 +143,7 @@
             </div>
           </div>
         </div> 
-        <div class="container">
+        <div class="content">
           <div class="col-md-12 d-flex align-items-center justify-content-center">
           <h5 class="display-5">Meie tehtud tööd</h5>
           </div>
@@ -135,9 +152,9 @@
           <p>Seekord pääsesin selliselt</p>
           </div>
       </div>
-        <div class="container">
-          <div class="row mt-4">
-            <div class="col-3">
+        <div class="content">
+          <div class="row mt-3">
+            <div class="col-3 d-flex align-items-center justify-content-center">
               <img src="https://picsum.photos/150/150" class="rounded-circle mx-auto d-block" alt="Pilt1">
             </div>
             <div class="col-3">
@@ -179,6 +196,7 @@
             </div>
           </div>
         </div>
+  </div>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
